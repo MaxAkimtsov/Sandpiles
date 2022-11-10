@@ -6,13 +6,13 @@
 #include <vector>
 
 int main(int argc, char* argv[]) {
-    SandpileGenerator SG;
+  SandpileGenerator SG;
 
-    SG.GetOptions(argc, argv);
+  SG.GetOptions(argc, argv);
 
-    std::vector <std::vector<uint64_t>> coordinates = SG.CreateGrainsMap();
+  std::vector<std::vector<uint64_t>> coordinates = SG.CreateGrainsMap();
 
-    SG.PilesCollapse(coordinates);
+  SG.PilesCollapse(coordinates);
 
-    return 0;
+  return 0;
 }
